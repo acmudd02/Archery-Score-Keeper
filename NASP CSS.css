@@ -1,6 +1,31 @@
+/*=========================================
+               Basic Styles
+=========================================*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  flex-direction: column;
+}
+
+
 .card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border-top: solid;
+  border-color: black;
+  border-width: 1em;
+  flex-wrap: wrap;
+}
+
+.ten{
+   position: relative;
+   left: -17px;
+    top: -3px;
+    font-size: 8pt;
+    opacity: .5;
 }
 label{
    position: relative;
@@ -10,10 +35,117 @@ label{
     opacity: .5;
 }
 
-.ten{
-   position: relative;
-  left: -16px;
-    top: -3px;
-    font-size: 8pt;
-    opacity: .5;
+
+.green{
+  background-color: #ccffcc;
+
+}
+
+span {
+    background-color: #ccffcc;
+
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+}
+.button_target{
+  display: flex;
+  justify-content: center;
+  border-top: solid;
+  border-color: black;
+  border-width: 1em;
+}
+div.15m {
+  border-top: solid;
+  border-color: black;
+  border-width: 1em;
+  margin-bottom: 50px;
+}
+img {
+  padding-left: 50px;
+
+}
+.subtitle{
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+/*=========================================
+              Media Queries
+=========================================*/
+@media only screen and (min-width: 280px){
+
+  .ten{
+     position: relative;
+     left: -13px;
+      top: -3px;
+      font-size: 8pt;
+      opacity: .5;
+  }
+  label{
+     position: relative;
+    left: -10px;
+      top: -3px;
+      font-size: 8pt;
+      opacity: .5;
+  }
+
+  input[type="radio"] {
+    margin-right: 0;
+  }
+}
+           /*For Tablets*/
+@media only screen and (min-width: 600px){
+.card{
+  flex-direction: row;
+  padding: 100px;
+}
+.10m{
+  flex-direction: column;
+}
+.15m{
+  flex-direction: column;
+}
+.header{
+  flex-direction: row;
+
+}
+}
+          /*For Wide PC Screens*/
+@media only screen and (min-width:1290px){
+.header{
+  font-size: 28;
+  justify-content: space-around;
+}
+img{
+  height: 100;
+  width: 160;
+
+}
+.card {
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.10m {
+  flex-direction: row;
+  max-width: 40%;
+}
+.15m {
+  flex-direction: row;
+  max-width: 40%;
+}
+fieldset {
+  max-width: 30%;
+  display: inline-block;
+  justify-content: space-around;
+  margin: 20px;
+}
+.header{
+  flex-direction: row;
+
+}
 }
