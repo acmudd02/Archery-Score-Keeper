@@ -1,5 +1,7 @@
 <Head>
   <link rel="stylesheet" type="text/css" href="\\presfile01\faculty-documents\amudd\Programs\NASP Score Card\NASP CSS.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script type="text/javascript">
 var total1 = 0;
 var total2 = 0;
@@ -235,13 +237,27 @@ function End2(end_two){
         var total_score = parseInt(total1) + parseInt(total2) + parseInt(total3) + parseInt(total4) + parseInt(total5) + parseInt(total6)
         document.getElementById("target").innerHTML = "You Scored:" + total_score;
       }
+      function print_func(){
+          window.print();
+      }
+
 
         </script>
+      <div class="header">
+        <h2>NASP Score Card</h2>
+        <img id="nasp_logo" src="http://naspschools.org/images/logo_mobile.png" height="50" width="80">
+      </div>
+
+
+
     </head>
-    <body>
     <div class="card">
+    <body>
+
+    <div class="10m">
       <fieldset>
-        <legend>End One</legend>
+        <legend align="top">End One</legend>
+        <div class="green">
         Arrow 1:
         <form name="arrow1e110m" id="arrow1e110m" runat="server">
 
@@ -266,7 +282,8 @@ function End2(end_two){
             <input id="rdo_10" type="radio" value="10" name="arrow_one_e1" onclick="End1(this.value);"><label for="rdo_10" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 2:
         <form name="arrow2e110m" id="arrow2e110m" runat="server">
 
@@ -291,7 +308,8 @@ function End2(end_two){
             <input id="rdo_20" type="radio" value="10" name="arrow_two_e1" onclick="End1(this.value);"><label for="rdo_20" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 3:
         <form name="arrow3e110m" id="arrow3e110m" runat="server">
 
@@ -316,7 +334,8 @@ function End2(end_two){
             <input id="rdo_30" type="radio" value="10" name="arrow_three_e1" onclick="End1(this.value);"><label for="rdo_30" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 4:
         <form name="arrow4e110m" id="arrow4e110m" runat="server">
 
@@ -341,7 +360,8 @@ function End2(end_two){
             <input id="rdo_40" type="radio" value="10" name="arrow_four_e1" onclick="End1(this.value);"><label for="rdo_40" class="ten">10</label>
 
         </form>
-
+        </div>
+        <div class="green">
         Arrow 5:
         <form name="arrow5e110m" id="arrow5e110m" runat="server">
 
@@ -366,14 +386,16 @@ function End2(end_two){
             <input id="rdo_50" type="radio" value="10" name="arrow_five_e1" onclick="End1(this.value);"><label for="rdo_50" class="ten">10</label>
 
         </form>
-
-
+      </div>
+      <div class="white">
         <h3>End One Score</h3>
         <input type="text" name="end_one" id="end_one" value="" size="2" readonly="readonly">
-
+      </div>
       </fieldset>
+
       <fieldset>
         <legend>End Two</legend>
+        <div class="green">
         Arrow 1:
         <form name="arrow1e210m" id="arrow1e210m" runat="server">
 
@@ -398,7 +420,8 @@ function End2(end_two){
             <input id="rdo_60" type="radio" value="10" name="arrow_one_e2" onclick="End2(this.value);"><label for="rdo_60" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 2:
         <form name="arrow2e210m" id="arrow2e210m" runat="server">
 
@@ -423,7 +446,8 @@ function End2(end_two){
             <input id="rdo_70" type="radio" value="10" name="arrow_two_e2" onclick="End2(this.value);"><label for="rdo_70" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 3:
         <form name="arrow3e210m" id="arrow3e210m" runat="server">
 
@@ -448,7 +472,8 @@ function End2(end_two){
             <input id="rdo_80" type="radio" value="10" name="arrow_three_e2" onclick="End2(this.value);"><label for="rdo_80" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 4:
         <form name="arrow4e210m" id="arrow4e210m" runat="server">
 
@@ -473,7 +498,8 @@ function End2(end_two){
             <input id="rdo_90" type="radio" value="10" name="arrow_four_e2" onclick="End2(this.value);"><label for="rdo_90" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 5:
         <form name="arrow5e210m" id="arrow5e210m" runat="server">
 
@@ -498,7 +524,7 @@ function End2(end_two){
             <input id="rdo_100" type="radio" value="10" name="arrow_five_e2" onclick="End2(this.value);"><label for="rdo_100" class="ten">10</label>
 
         </form>
-
+      </div>
 
         <h3>End Two Score</h3>
         <input type="text" name="end_two" id="end_two" value="" size="2" readonly="readonly">
@@ -506,6 +532,7 @@ function End2(end_two){
       </fieldset>
       <fieldset>
         <legend>End Three</legend>
+        <div class="green">
         Arrow 1:
         <form name="arrow1e310m" id="arrow1e310m" runat="server">
 
@@ -530,7 +557,8 @@ function End2(end_two){
             <input id="rdo_110" type="radio" value="10" name="arrow_one_e3" onclick="End3(this.value);"><label for="rdo_110" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 2:
         <form name="arrow2e310m" id="arrow2e310m" runat="server">
 
@@ -555,7 +583,8 @@ function End2(end_two){
             <input id="rdo_120" type="radio" value="10" name="arrow_two_e3" onclick="End3(this.value);"><label for="rdo_120" class="ten">10</label>
 
         </form>
-
+        </div>
+        <div class="green">
         Arrow 3:
         <form name="arrow3e310m" id="arrow3e310m" runat="server">
 
@@ -580,7 +609,8 @@ function End2(end_two){
             <input id="rdo_130" type="radio" value="10" name="arrow_three_e3" onclick="End3(this.value);"><label for="rdo_130" class="ten">10</label>
 
         </form>
-
+      </div>
+      <div class="green">
         Arrow 4:
         <form name="arrow4e310m" id="arrow4e310m" runat="server">
 
@@ -605,7 +635,8 @@ function End2(end_two){
             <input id="rdo_140" type="radio" value="10" name="arrow_four_e3" onclick="End3(this.value);"><label for="rdo_140" class="ten">10</label>
 
         </form>
-
+        </div>
+        <div class="green">
         Arrow 5:
         <form name="arrow5e310m" id="arrow5e310m" runat="server">
 
@@ -630,13 +661,16 @@ function End2(end_two){
             <input id="rdo_150" type="radio" value="10" name="arrow_five_e3" onclick="End3(this.value);"><label for="rdo_150" class="ten">10</label>
 
         </form>
-
+      </div>
 
         <h3>End Three Score</h3>
         <input type="text" name="end_three" id="end_three" value="" size="2" readonly="readonly">
     </fieldset>
+  </div>
+  <div class="15m">
     <fieldset>
     <legend>End Four</legend>
+    <div class="green">
     Arrow 1:
     <form name="arrow1e4" id="arrow1e4" runat="server">
 
@@ -661,7 +695,8 @@ function End2(end_two){
         <input id="rdo_160" type="radio" value="10" name="arrow_one_e4" onclick="End4(this.value);"><label for="rdo_160" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 2:
     <form name="arrow2e4" id="arrow2e4" runat="server">
 
@@ -686,7 +721,8 @@ function End2(end_two){
         <input id="rdo_170" type="radio" value="10" name="arrow_two_e4" onclick="End4(this.value);"><label for="rdo_170" class="ten">10</label>
 
     </form>
-
+    </div>
+    <div class="green">
     Arrow 3:
     <form name="arrow3e4" id="arrow3e4" runat="server">
 
@@ -711,7 +747,8 @@ function End2(end_two){
         <input id="rdo_180" type="radio" value="10" name="arrow_three_e4" onclick="End4(this.value);"><label for="rdo_180" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 4:
     <form name="arrow4e4" id="arrow4e4" runat="server">
 
@@ -736,7 +773,8 @@ function End2(end_two){
         <input id="rdo_190" type="radio" value="10" name="arrow_four_e4" onclick="End4(this.value);"><label for="rdo_190" class="ten">10</label>
 
     </form>
-
+    </div>
+    <div class="green">
     Arrow 5:
     <form name="arrow5e4" id="arrow5e4" runat="server">
 
@@ -761,14 +799,14 @@ function End2(end_two){
         <input id="rdo_200" type="radio" value="10" name="arrow_five_e4" onclick="End4(this.value);"><label for="rdo_200" class="ten">10</label>
 
     </form>
-
-
+  </div>
     <h3>End Four Score</h3>
     <input type="text" name="end_four" id="end_four" value="" size="2" readonly="readonly">
 
   </fieldset>
   <fieldset>
   <legend>End Five</legend>
+  <div class="green">
     Arrow 1:
     <form name="arrow1e5" id="arrow1e5" runat="server">
 
@@ -793,7 +831,8 @@ function End2(end_two){
         <input id="rdo_210" type="radio" value="10" name="arrow_one_e5" onclick="End5(this.value);"><label for="rdo_210" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 2:
     <form name="arrow2e5" id="arrow2e5" runat="server">
 
@@ -818,7 +857,8 @@ function End2(end_two){
         <input id="rdo_220" type="radio" value="10" name="arrow_two_e5" onclick="End5(this.value);"><label for="rdo_220" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 3:
     <form name="arrow3e5" id="arrow3e5" runat="server">
 
@@ -843,7 +883,8 @@ function End2(end_two){
         <input id="rdo_230" type="radio" value="10" name="arrow_three_e5" onclick="End5(this.value);"><label for="rdo_230" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 4:
     <form name="arrow4e5" id="arrow4e5" runat="server">
 
@@ -868,7 +909,8 @@ function End2(end_two){
         <input id="rdo_240" type="radio" value="10" name="arrow_four_e5" onclick="End5(this.value);"><label for="rdo_240" class="ten">10</label>
 
     </form>
-
+  </div>
+  <div class="green">
     Arrow 5:
     <form name="arrow5e5" id="arrow5e5" runat="server">
 
@@ -893,7 +935,7 @@ function End2(end_two){
         <input id="rdo_250" type="radio" value="10" name="arrow_five_e5" onclick="End5(this.value);"><label for="rdo_250" class="ten">10</label>
 
     </form>
-
+  </div>
 
     <h3>End Five Score</h3>
     <input type="text" name="end_five" id="end_five" value="" size="2" readonly="readonly">
@@ -901,6 +943,7 @@ function End2(end_two){
   </fieldset>
   <fieldset>
   <legend>End Six</legend>
+  <div class="green">
   Arrow 1:
   <form name="arrow1e6" id="arrow1e6" runat="server">
 
@@ -925,7 +968,8 @@ function End2(end_two){
       <input id="rdo_260" type="radio" value="10" name="arrow_one_e6" onclick="End6(this.value);"><label for="rdo_260" class="ten">10</label>
 
   </form>
-
+</div>
+<div class="green">
   Arrow 2:
   <form name="arrow2e6" id="arrow2e6" runat="server">
 
@@ -950,7 +994,8 @@ function End2(end_two){
       <input id="rdo_270" type="radio" value="10" name="arrow_two_e6" onclick="End6(this.value);"><label for="rdo_270" class="ten">10</label>
 
   </form>
-
+</div>
+<div class="green">
   Arrow 3:
   <form name="arrow3e6" id="arrow3e6" runat="server">
 
@@ -975,7 +1020,8 @@ function End2(end_two){
       <input id="rdo_280" type="radio" value="10" name="arrow_three_e6" onclick="End6(this.value);"><label for="rdo_280" class="ten">10</label>
 
   </form>
-
+</div>
+<div class="green">
   Arrow 4:
   <form name="arrow4e6" id="arrow4e6" runat="server">
 
@@ -1000,7 +1046,8 @@ function End2(end_two){
       <input id="rdo_290" type="radio" value="10" name="arrow_four_e6" onclick="End6(this.value);"><label for="rdo_290" class="ten">10</label>
 
   </form>
-
+</div>
+<div class="green">
   Arrow 5:
   <form name="arrow5e6" id="arrow5e6" runat="server">
 
@@ -1025,13 +1072,27 @@ function End2(end_two){
       <input id="rdo_300" type="radio" value="10" name="arrow_five_e6" onclick="End6(this.value);"><label for="rdo_300" class="ten">10</label>
 
   </form>
-
+</div>
 
   <h3>End Six Score</h3>
   <input type="text" name="end_six" id="end_six" value="" size="2" readonly="readonly">
-
+</div>
 </fieldset>
 </div>
+
+    <div class="button_target">
     <button type="button" onclick="get_score()">Get Score</button>
-    <p id="target"></p>
+    <span>
+    <p id="target">You Scored:</p>
+  </span>
+
+    <button type="button" onclick="print_func()">Print Score</button>
+
+<script src="\\presfile01\faculty-documents\amudd\Programs\NASP Score Card\NASP_Score_js.js"></script>
     </body>
+</div>
+    <div class="foot">
+    <footer>
+      <p>Good Luck!<p>
+    </div>
+    </footer>
