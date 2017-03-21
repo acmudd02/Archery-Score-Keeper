@@ -1,0 +1,30 @@
+/*=====================
+    Print Styling
+=====================*/
+
+@media print{
+  .card{
+    font-size: 8;
+    flex-direction: row;
+}
+  .foot{
+    display: none;
+  }
+  .header{
+    margin-left: 270px;
+    max-height: 33px;
+  }
+  .button_target button{
+    display: none;
+  }
+  .button_target span{
+    background: none;
+  }
+  .ten{
+    left: -15.5;
+  }
+  label{
+    left: -12;
+    top: -3;
+  }
+  }
