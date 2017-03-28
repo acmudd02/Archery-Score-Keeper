@@ -101,6 +101,7 @@ img {
 .card{
   flex-direction: row;
   padding: 100px;
+  justify-content: space-around;
 }
 .10m{
   flex-direction: column;
@@ -121,22 +122,18 @@ img {
 }
 img{
   height: 100;
-  width: 160;
+  width: 180;
 
 }
-.card {
-  flex-direction: column;
-  justify-content: space-around;
 
-}
 
 .10m {
   flex-direction: row;
-  max-width: 40%;
+  max-width: 50%;
 }
 .15m {
   flex-direction: row;
-  max-width: 40%;
+  max-width: 50%;
 }
 fieldset {
   max-width: 30%;

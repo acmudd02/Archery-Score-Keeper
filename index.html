@@ -3,6 +3,7 @@ My objective was to create a script that would allow users to fill in radio butt
 as one does a scantron card, then sum the score once a button is pressed.-->
 
 <Head>
+  <link rel="stylesheet" type="text/css" href="normalize.css"/>
   <link rel="stylesheet" type="text/css" href="NASP CSS.css"/>
   <link rel="stylesheet" type="text/css" href="print.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,6 +15,9 @@ var total3 = 0;
 var total4 = 0;
 var total5 = 0;
 var total6 = 0;
+
+/*Each fucntion is designed to gather a value from a radio button.  While inefficent, I designed
+each function to correspond with each arrow shot.*/
 
 function End1(end_one){
     var arrow_1_e1_10m = 0;
@@ -237,11 +241,12 @@ function End2(end_two){
                         document.getElementById('end_six').value=sum_end_6;
                         total6 = parseInt(sum_end_6);
                     }
-
+//This function sums the totals of each end.
         function get_score(){
         var total_score = parseInt(total1) + parseInt(total2) + parseInt(total3) + parseInt(total4) + parseInt(total5) + parseInt(total6)
         document.getElementById("target").innerHTML = "You Scored:" + total_score;
       }
+//This function prints the window.
       function print_func(){
           window.print();
       }
